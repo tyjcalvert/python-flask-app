@@ -18,6 +18,9 @@ def index():
 def say_hello():
     return '<h1>Hello, Flask!</h1>'
 
+@app.route('/foo')
+def foo():
+    return '<h1>Foo page</h1>'
 
 # dynamic route, URL variable default
 @app.route('/greet', defaults={'name': 'Programmer'})
