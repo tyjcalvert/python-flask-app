@@ -18,7 +18,7 @@ def index():
 def say_hello():
     return '<h1>Hello, Flask!</h1>'
 
-@app.route('/foo')
+@app.route('/foobar')
 def foo():
     return '<h1>Foo page</h1>'
 
