@@ -11,6 +11,10 @@ CORS(app)
 def index():
     return '<h1>Hello, World!</h1>'
 
+@app.route('/test')
+def test():
+    return '<h1>Hello, Test!</h1>'
+
 
 # bind multiple URL for one view function
 @app.route('/hi')
